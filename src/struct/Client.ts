@@ -6,6 +6,8 @@ import {TimetableModules} from "../modules/Timetable";
 import {SchoolLifeModules} from "../modules/SchoolLife";
 import {ClassLifeModules} from "../modules/ClassLife";
 import {DownloaderModules} from "../modules/Downloader";
+import {MarkModules} from "../modules/Mark";
+
 
 export class Client {
     private restManager: RESTManager;
@@ -17,6 +19,7 @@ export class Client {
     public timetable: TimetableModules;
     public schoollife: SchoolLifeModules;
     public classlife: ClassLifeModules;
+    public marks: MarkModules;
 
     constructor(credential?: Credential) {
         if (credential) this.credentials = credential;
@@ -28,5 +31,6 @@ export class Client {
         this.timetable = new TimetableModules(this.restManager, this.credentials, "EDT");
         this.schoollife = new SchoolLifeModules(this.restManager, this.credentials, "VIE_SCOLAIRE");
         this.classlife = new ClassLifeModules(this.restManager, this.credentials, "VIE_DE_LA_CLASSE");
+        this.marks = new MarkModules(this.restManager, this.credentials, "NOTES");
     }
 }
