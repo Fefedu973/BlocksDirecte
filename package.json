@@ -1,6 +1,6 @@
 {
   "name": "@blockshub/blocksdirecte",
-  "version": "0.0.1-alpha",
+  "version": "0.0.2-alpha",
   "description": "A Wrapper for EcoleDirecte",
   "homepage": "https://github.com/BlocksHub/BlocksDirecte#readme",
   "bugs": {
