@@ -18,6 +18,11 @@ export * from "./types/Module";
 export * from "./types/RequestHandler";
 export * from "./types/ServerResponse";
 export * from "./types/SchoolLifeConductItem";
+export * from "./types/SchoolLifeExemptionItem";
+export * from "./types/SchoolLifeAttendanceItem";
+export * from "./types/SchoolLifeAttendanceItemType";
+export * from "./types/TimetableCourse"
+export * from "./types/TimetableCourseType"
 
 /* *************************************************************** */
 /* Errors                                                          */
