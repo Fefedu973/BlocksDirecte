@@ -12,6 +12,7 @@ export * from "./types/Account";
 export * from "./types/AccountIndividualSettings";
 export * from "./types/AccountKind";
 export * from "./types/Credential";
+export * from "./types/DownloadRequest";
 export * from "./types/DoubleAuthQuestions";
 export * from "./types/DoubleAuthResult";
 export * from "./types/Module";
